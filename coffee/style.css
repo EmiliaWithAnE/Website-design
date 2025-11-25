@@ -28,6 +28,9 @@
     
     }
 
+    .shadow-dark {box-shadow: var(--shadow-dark);}
+    .shadow-light {box-shadow: var(--shadow-light);}
+
 /************************** COMPONENTS **************************/
 .product-image {
     position:relative;
@@ -59,7 +62,24 @@
     left:var(--space-2)
 }
 
+.tags {
+    display: flex;
+    gap:var(--space-1);
+    list-style:none;
+}
+
+.tags .tag-item {
+    background-color: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+}
 /************************** LAYOUT **************************/
+.container {
+    max-width: 1280px;
+    margin: var(--space-1) auto var(--space-0);
+}
 .d-flex { display: flex; }
 
 .flex-between { justify-content: space-between; }
